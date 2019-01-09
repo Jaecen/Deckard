@@ -13,6 +13,7 @@ If you just want to see the shuffling algorithm, you can jump [right here](src/D
 - The [`Deckard.Cli` prject](src/Deckard.Cli) contains a simple command line interface to run the code. Execute it with either `guid` or `knuth` as the sole parameter to see some high-tech ASCII graphics on your screen.
 
 ## How Do I Run It?
+
 Open up `Deckard.sln` in an up-to-date VS2017 instance. Make sure `Deckard.Cli` is set as the default project and hit `Ctrl + F5`. You should see a console window with seven columns of white and red cards.
 
 You can also run the unit tests in Visual Studio and watch them turn green in quick succession! Exciting! Press `Ctrl + R, A` to run all tests in the solution.
@@ -32,14 +33,14 @@ Take a look at [`Card.cs`](src/Deckard/Card.cs):
 ```csharp
 public class Card
 {
-	public Suit Suit { get; }
-	public Rank Rank { get; }
+  public Suit Suit { get; }
+  public Rank Rank { get; }
 
-	public Card(Suit suit, Rank rank)
-	{
-		Suit = suit ?? throw new ArgumentNullException(nameof(suit));
-		Rank = rank ?? throw new ArgumentNullException(nameof(rank));
-	}
+  public Card(Suit suit, Rank rank)
+  {
+    Suit = suit ?? throw new ArgumentNullException(nameof(suit));
+    Rank = rank ?? throw new ArgumentNullException(nameof(rank));
+  }
 }
 ```
 
@@ -62,6 +63,7 @@ The [command line app](src/Deckard.Cli/Program.cs) is pretty straightforward, ju
 Finally, [the unit tests](test/Deckard.Test) confirm basic functionality of `DeckGenerator` and the `IShuffler` implementations. I love using unit tests where they're appropriate, so to that end I try to design all of my services to be mockable. I'm not a fan of test-driven design and I've never found benefit to 100% test coverage. The main value that unit testing delivers for me is in enabling quick feedback loops during initial development and allowing me to refactor mature apps while ensuring I haven't broken any expected functionality.
 
 ## Why "Deckard"?
+
 Because the program shuffles a deck of cards. Deck - card. Deckard.
 
 I know. I'm sorry.
