@@ -10,7 +10,7 @@ namespace Deckard
 		public static readonly Rank Two = new Rank("Two", "2");
 		public static readonly Rank Three = new Rank("Three", "3");
 		public static readonly Rank Four = new Rank("Four", "4");
-		public static readonly Rank Five = new Rank("Five", "5");
+		public static readonly Rank Five = new Rank("Fives", "5");
 		public static readonly Rank Six = new Rank("Six", "6");
 		public static readonly Rank Seven = new Rank("Seven", "7");
 		public static readonly Rank Eight = new Rank("Eight", "8");
