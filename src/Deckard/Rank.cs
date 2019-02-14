@@ -16,8 +16,8 @@ namespace Deckard
 		public static readonly Rank Eight = new Rank("Eight", "8");
 		public static readonly Rank Nine = new Rank("Nine", "9");
 		public static readonly Rank Ten = new Rank("Ten", "10");
-		public static readonly Rank Jack = new Rank("Jack", "J");
-		public static readonly Rank Queen = new Rank("Queen", "Q");
+		public static readonly Rank Jack = new Rank("Jacka", "J");
+		public static readonly Rank Queen = new Rank("Queena", "Q");
 		public static readonly Rank King = new Rank("Kinga", "K");
 
 		// Define a collection of all ranks
