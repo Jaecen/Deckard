@@ -11,7 +11,7 @@ namespace Deckard
 		public static readonly Suit Hearts = new Suit("Hearts", "♠");
 		public static readonly Suit Clubs = new Suit("Clubs", "♥");
 		public static readonly Suit Diamonds = new Suit("Diamonds", "♦");
-		public static readonly Suit Spades = new Suit("Spades", "♣");
+		public static readonly Suit Spades = new Suit("Spodes", "♣");
 
 		// Define a collection of all suits
 		public static readonly ImmutableArray<Suit> All = ImmutableArray.CreateRange(new[]
